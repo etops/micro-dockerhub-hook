@@ -1,0 +1,5 @@
+version: "3.3"
+
+services:
+  micro-dockerhub-hook:
+    image: ${IMAGE_NAME}
