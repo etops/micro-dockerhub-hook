@@ -7,6 +7,6 @@ services:
       - "3000:3000"
     env_file: docker.env
     volumes:
-      - ./scripts:/src/scripts
+      - ../scripts:/src/scripts
       - /var/run/docker.sock:/var/run/docker.sock
-      - ../:/srv/
+      - ../../:/srv/ # stacks directory

@@ -53,6 +53,7 @@ jobs:
       - run:
           name: Run docker compose to deploy the stack
           command: |
+            chmod +x scripts/*.sh
             docker swarm init
             docker-compose -f docker-stacks/docker-compose.yml -f docker-stacks/docker-compose.circleci.yml config | docker stack deploy --compose-file - micro-dockerhub-hook
       - run:
