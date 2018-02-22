@@ -1,7 +1,7 @@
-version: '2'
+version: '3.3'
 services:
-  dockerhub:
-    image: maccyber/micro-dockerhub-hook
+  micro-dockerhub-hook:
+    image: etops/micro-dockerhub-hook
     # build: .
     ports:
       - "3000:3000"
@@ -9,5 +9,4 @@ services:
     volumes:
       - ./scripts:/src/scripts
       - /var/run/docker.sock:/var/run/docker.sock
-      # Path to docker-compose files who are triggered by scripts:
-      # - /srv:/srv
+      - ../:/srv/
