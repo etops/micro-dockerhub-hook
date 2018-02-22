@@ -9,4 +9,4 @@ services:
     volumes:
       - ../scripts:/src/scripts
       - /var/run/docker.sock:/var/run/docker.sock
-      - ../../:/srv/ # stacks directory
+      - ../../stacks/:/srv/ # stacks directory
