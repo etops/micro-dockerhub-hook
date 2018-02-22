@@ -4,7 +4,7 @@ services:
     image: etops/micro-dockerhub-hook
     # build: .
     ports:
-      - "3000:3000"
+      - "3999:3999"
     env_file: docker.env
     volumes:
       - ../scripts:/src/scripts

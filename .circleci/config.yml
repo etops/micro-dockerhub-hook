@@ -64,7 +64,7 @@ jobs:
       - run:
           name: Test micro-dockerhub-hook
           command: |
-            until curl --fail -i -d @test/data/payload.json http://localhost:3000/abc123 ; do
+            until curl --fail -i -d @test/data/payload.json http://localhost:3999/abc123 ; do
               sleep 5
             done
 
