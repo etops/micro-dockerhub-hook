@@ -62,7 +62,10 @@ jobs:
 
       - run:
           name: Test micro-dockerhub-hook
-          command: curl --fail -i -d @test/data/payload.json http://localhost:3000/abc123
+          command: |
+            until curl --fail -i -d @test/data/payload.json http://localhost:3000/abc123 ; do
+              sleep 5
+            done
 
   deploy:
     working_directory: ~/etops/micro-dockerhub-hook
