@@ -27,12 +27,12 @@ WORKDIR "/src"
 RUN npm install --production
 
 # Env variables
-ENV SERVER_PORT 3999
+ENV SERVER_PORT 3000
 ENV TOKEN abc123
 # ENV DEBUG DISABLE
 
-# Expose 3999
-EXPOSE 3999
+# Expose 3000
+EXPOSE 3000
 
 # Startup
 ENTRYPOINT npm start
