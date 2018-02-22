@@ -9,6 +9,6 @@ module.exports = {
   'etops/ow-front:latest': 'docker-stack-deploy.sh frontend/docker-compose.yml frontend',
   'etops/ow-optimiser-back:latest': 'docker-stack-deploy.sh optimiser/docker-compose.yml optimiser',
   'etops/rabbitmq:latest': 'docker-stack-deploy.sh rabbitmq/docker-compose.yml rabbitmq',
-  'etops/nectar-toolbox:latest': 'docker-stack-deploy.sh workers/docker-compose.yml toolbox'
+  'etops/nectar-toolbox:latest': 'docker-stack-deploy.sh workers/docker-compose.yml toolbox',
   'tklo/app:latest': 'test.sh'
 }
