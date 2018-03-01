@@ -5,11 +5,12 @@
 ###########################################################
 
 # Setting the base to nodejs 8
-FROM mhart/alpine-node:8
+FROM node:8-alpine
 
 #### Begin setup ####
 
 # Installs docker
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
 RUN apk add --update --no-cache docker py-pip
 RUN apk add bash bash-doc bash-completion
 RUN pip install docker-compose

@@ -1,1 +1,1 @@
-index.prod.js
+index.circleci.js
