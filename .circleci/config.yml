@@ -53,6 +53,7 @@ jobs:
       - run:
           name: Run docker compose to deploy the stack
           command: |
+            mv scripts/index.circleci.js scripts/index.js
             chmod +x scripts/*.sh
             mkdir -p ../stacks
             docker swarm init
