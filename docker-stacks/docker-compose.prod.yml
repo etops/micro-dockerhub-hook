@@ -7,9 +7,10 @@ services:
       - "3999:3000"
     env_file: docker.env
     volumes:
-      - ../scripts:/src/scripts
-      - /var/run/docker.sock:/var/run/docker.sock
+      - ../scripts:/src/scripts # index.js and shell scripts
+      - /var/run/docker.sock:/var/run/docker.sock # access to docker host
       - ../../stacks/:/srv/ # stacks directory
+      - ~/.docker/:/root/.docker # docker hub login credentials
     deploy:
       restart_policy:
         condition: on-failure
