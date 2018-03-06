@@ -33,7 +33,7 @@ echo $TOKEN
 Nodejs and npm must be installed.
 
 ```sh
-git clone http://github.com/maccyber/micro-dockerhub-hook
+git clone http://github.com/etops/micro-dockerhub-hook
 cd micro-dockerhub-hook
 npm i
 ```
@@ -70,7 +70,7 @@ npm start
 
 Git clone
 ```sh
-git clone http://github.com/maccyber/micro-dockerhub-hook
+git clone http://github.com/etops/micro-dockerhub-hook
 ```
 
 Add secret token in docker.env with
@@ -87,7 +87,7 @@ docker-compose up -d
 
 Git clone
 ```sh
-git clone http://github.com/maccyber/micro-dockerhub-hook
+git clone http://github.com/etops/micro-dockerhub-hook
 ```
 
 Start with
@@ -98,7 +98,7 @@ docker run -d \
   -v ${PWD}/scripts:/src/scripts \
   -v /var/run/docker.sock:/var/run/docker.sock \
   --name micro-dockerhub-hook \
-  maccyber/micro-dockerhub-hook
+  etops/micro-dockerhub-hook
 ```
 
 # Configuration on docker hub
@@ -120,7 +120,7 @@ docker-hook listens to port 3000 by default.
 Setup the development environment
 
 ```sh
-git clone https://github.com/maccyber/micro-dockerhub-hook/
+git clone https://github.com/etops/micro-dockerhub-hook/
 cd micro-dockerhub-hook
 npm i
 npm run dev
